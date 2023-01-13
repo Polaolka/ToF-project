@@ -1,0 +1,211 @@
+.delivery-number {
+  border: 1px solid $main-text-cl;
+  border-radius: 50%;
+}
+
+.delivery-description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.2;
+  color: $main-text-cl;
+  display: flex;
+  align-items: center;
+}
+
+.delivery-description::after {
+  content: '';
+  height: 1px;
+  width: 958px;
+  background-color: $main-text-cl;
+  display: block;
+  margin-left: 16px;
+}
+
+.delivery-number {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $main-text-cl;
+  display: flex;
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 56px;
+}
+
+.delivery-item {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: $main-text-cl;
+}
+
+.delivery-list {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.delivery-description {
+  margin-bottom: 80px;
+}
+
+.blog-text-follow {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
+  color: $main-text-cl;
+}
+
+.backdrop-modal-blog-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: $main-text-cl;
+}
+
+.backdrop-modal-blog-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #5c5c5c;
+}
+
+.form-blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.backdrop-modal-blog {
+  width: 860px;
+}
+
+.form-blog-label {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5c5c5c;
+}
+
+.form-blog-input {
+  @include fonts($fw: 500, $fs: 14px, $lh: 1.2, $color: var(--main-text-cl));
+  color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  padding-left: 12px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+/* DELIVERY */
+
+h2,
+ul {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+
+.delivery-number {
+  border: 1px solid $main-text-cl;
+  border-radius: 50%;
+}
+
+.delivery-description {
+  @include fonts($fw: 700, $fs: 44px, $lh: 1.2, $color: var(--main-text-cl));
+  display: flex;
+  align-items: center;
+}
+
+.delivery-description::after {
+  content: '';
+  height: 1px;
+  width: 958px;
+  background-color: $main-text-cl;
+  display: block;
+  margin-left: 16px;
+}
+
+.delivery-number {
+  @include fonts($fw: 500, $fs: 26px, $lh: 1.2, $color: var(--main-text-cl));
+  display: flex;
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 56px;
+}
+
+.delivery-item {
+  display: flex;
+  align-items: center;
+  @include fonts($fw: 500, $fs: 32px, $lh: 1.2, $color: var(--main-text-cl));
+}
+
+.delivery-list {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.delivery-description {
+  margin-bottom: 80px;
+}
+
+.blog-text-follow {
+  @include fonts($fw: 500, $fs: 32px, $lh: 1.2, $color: var(--main-text-cl));
+}
+
+.backdrop-modal-blog-title {
+  @include fonts($fw: 600, $fs: 28px, $lh: 1.2, $color: var(--main-text-cl));
+}
+
+.backdrop-modal-blog-text {
+  @include fonts($fw: 400, $fs: 16px, $lh: 130%, $color: var(--main-text-cl));
+
+  text-align: center;
+  color: #5c5c5c;
+}
+
+.form-blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.backdrop-modal-blog {
+  width: 860px;
+}
+
+.form-blog-label {
+  @include fonts($fw: 600, $fs: 14px, $lh: 1.2, $color: var(--main-text-cl));
+  color: #5c5c5c;
+}
+
+.form-blog-input {
+  @include fonts($fw: 600, $fs: 14px, $lh: 1.2, $color: var(--main-text-cl));
+  color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  padding-left: 12px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
