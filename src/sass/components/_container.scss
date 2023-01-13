@@ -1,0 +1,39 @@
+// .container {
+//   phone screen
+//   max-width: 448px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+
+//   outline: 2px solid red;
+//   outline-offset: -2px;
+
+//   tablet screen
+//   @media screen and (min-width: 768px) {
+//     max-width: 720px;
+//   }
+
+//   desktop screen
+//   @media screen and (min-width: 1200px) {
+//     max-width: 1200px;
+//   }
+// }
+
+.container {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  
+    @include mq(tablet) {
+      max-width: 768px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  
+    @include mq(desktop) {
+      max-width: 1280px;
+    }
+  }

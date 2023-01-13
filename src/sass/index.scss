@@ -1,2 +1,35 @@
 @import './common';
-@import './example';
+
+// utils styles
+@import './utils/variables';
+@import './utils/reset';
+@import './vendors/v-hidden';
+// @import './utils/animations';
+@import './utils/mixins';
+@import './utils/placeholder';
+
+// components styles
+@import './components/base';
+@import './components/container';
+@import './components/buttons';
+@import './components/card-set';
+
+// sections style
+@import './components/header';
+@import './components/hero';
+
+@import './components/about';
+@import './components/store';
+@import './components/delivery';
+@import './components/blog';
+// slider for blog
+@import './components/slider';
+
+@import './components/footer';
+
+@import './components/modal-contact-us';
+@import './components/modal-subscribe';
+@import './components/modal-thank-you';
+@import './components/mobile-menu';
+
+// @import './example';
