@@ -1,5 +1,5 @@
 
-@mixin fonts($fw: 500, $fs: 32px, $lh: 1.2, $color: var(--main-text-color)) {
+@mixin fonts($fw: 500, $fs: 32px, $lh: 1.2, $color: var(--main-text-cl)) {
 	font-weight: $fw;
 	font-size: $fs;
 	line-height: $lh;

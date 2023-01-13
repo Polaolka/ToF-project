@@ -1,36 +1,41 @@
-// .btn {
-//     min-width: 160px;
-//     min-height: 40px;
-//     padding: 11px 19px;
+.btn {
+    font-family: var(--main-font);
+    display: block;
+    margin: 0 auto;
+    min-width: 208px;
+    min-height: 44px;
+    padding: 10px 35px;
+    background-color: #E86F54;;
   
-//     font-family: inherit;
-//     font-weight: 600;
-//     font-size: 12px;
-//     line-height: calc(16 / 12);
-//     letter-spacing: 0.09em;
-//     text-transform: uppercase;
-//     color: var(--main-txt-cl);
-  
-//     border: 1px solid var(--accent-bg-cl);
-//     border-radius: var(--btn-radius);
-  
-//     background-color: transparent;
-  
-//     transition: color var(--anim-fast), background-color var(--anim-fast);
-  
-//     &:hover,
-//     &:focus {
-//       color: var(--light-txt-cl);
-//       background-color: var(--accent-bg-cl);
-//     }
-  
-//     &.animate__animated {
-//       animation: heartBeat 6s ease-in-out 4s infinite both;
-//     }
-  
-//     &--theme-dark {
-//       color: var(--light-txt-cl);
-//     }
-//   }
+	@include fonts($fw: 500, $fs: 20px, $lh: 0.857, $color: var(--white-cl));
 
-// border-radius: 38px
+ 
+    border: none;
+    border-radius: var(--btn-radius);
+    
+    transition: background-color var(--anim-fast);
+  
+    &:hover {
+      background-color: var(--hover-btn-cl);
+    }
+
+    &:focus {
+      background-color: var(--focus-btn-cl);
+    }
+
+    @include mq(tablet) {
+        min-width: 280px;
+        min-height: 64px;
+        padding: 20px 43.5px;
+
+        @include fonts($fw: 500, $fs: 28px, $color: var(--white-cl));
+    }
+
+    // &.animate__animated {
+    //   animation: heartBeat 6s ease-in-out 4s infinite both;
+    // }
+  
+}
+
+// font-size: 28px;
+// line-height: 24px;
