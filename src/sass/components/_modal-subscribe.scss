@@ -35,6 +35,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include mq(phone) {
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 28px;
+  }
   @include mq(tablet) {
     width: 352px;
     margin-left: auto;
@@ -51,7 +57,7 @@
 .backdrop-modal-blog-title {
   font-family: 'Montserrat';
   @include mq(phone) {
-    @include fonts($fw: 600, $fs: 19px, $lh: 1.2, $color: var(--main-text-cl));
+    @include fonts($fw: 600, $fs: 18px, $lh: 1.2, $color: var(--main-text-cl));
     margin-bottom: 14px;
   }
   @include mq(tablet) {
@@ -62,6 +68,10 @@
 
 .backdrop-modal-blog-text {
   font-family: 'Montserrat';
+  @include mq(phone) {
+    @include fonts($fw: 400, $fs: 12px, $lh: 130%, $color: var(--main-text-cl));
+    margin-bottom: 18px;
+  }
   @include mq(tablet) {
     @include fonts($fw: 400, $fs: 16px, $lh: 130%, $color: #5c5c5c);
     width: 336px;
@@ -126,5 +136,25 @@
     width: 336px;
     height: 50px;
     padding: 14px 122px;
+  }
+}
+
+.form-blog-input {
+  height: 35px;
+  @include mq(phone) {
+    height: 35px;
+  }
+  @include mq(tablet) {
+    height: 49px;
+  }
+}
+
+.form-blog-label {
+  font-family: 'Montserrat';
+  @include mq(phone) {
+    @include fonts($fw: 500, $fs: 10px, $lh: 1.2, $color: #5c5c5c);
+  }
+  @include mq(tablet) {
+    @include fonts($fw: 500, $fs: 14px, $lh: 1.2, $color: #5c5c5c);
   }
 }
