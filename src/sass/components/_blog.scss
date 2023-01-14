@@ -1,0 +1,49 @@
+.blog-btn {
+}
+
+.blog-wrapper-foto {
+  @include mq(phone) {
+    gap: 8px;
+  }
+  @include mq(tablet) {
+    gap: 32px;
+  }
+  display: flex;
+  justify-content: center;
+}
+
+.blog-text-follow {
+  display: flex;
+  justify-content: center;
+  @include mq(phone) {
+    @include fonts($fw: 500, $fs: 18px, $lh: 1.2, $color: var(--main-text-cl));
+    margin-top: 28px;
+    margin-bottom: 32px;
+  }
+  @include mq(tablet) {
+    @include fonts($fw: 500, $fs: 32px, $lh: 1.2, $color: var(--main-text-cl));
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+  @include mq(desktop) {
+    @include fonts($fw: 500, $fs: 32px, $lh: 1.2, $color: var(--main-text-cl));
+    margin-top: 44px;
+    margin-bottom: 48px;
+  }
+}
+
+.blog-foto {
+  @include mq(phone) {
+    width: 153px;
+    height: 181px;
+  }
+  @include mq(tablet) {
+    width: 344px;
+    height: 398px;
+  }
+  @include mq(desktop) {
+    @include fonts($fw: 500, $fs: 32px, $lh: 1.2, $color: var(--main-text-cl));
+    margin-top: 44px;
+    margin-bottom: 48px;
+  }
+}

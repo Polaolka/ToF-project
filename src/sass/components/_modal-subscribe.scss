@@ -1,0 +1,130 @@
+.modal-subscribe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+  transition: opacity, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-subscribe-wrapper {
+  @include mq(phone) {
+    width: 272px;
+  }
+  @include mq(tablet) {
+    width: 588px;
+  }
+  @include mq(desktop) {
+    display: flex;
+    width: 860px;
+  }
+  background-color: var(--white-cl);
+}
+
+.modal-subscribe-information-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include mq(tablet) {
+    width: 352px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+  }
+  @include mq(desktop) {
+    margin-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0;
+  }
+}
+
+.backdrop-modal-blog-title {
+  font-family: 'Montserrat';
+  @include mq(phone) {
+    @include fonts($fw: 600, $fs: 19px, $lh: 1.2, $color: var(--main-text-cl));
+    margin-bottom: 14px;
+  }
+  @include mq(tablet) {
+    @include fonts($fw: 600, $fs: 27px, $lh: 1.2, $color: var(--main-text-cl));
+    margin-bottom: 24px;
+  }
+}
+
+.backdrop-modal-blog-text {
+  font-family: 'Montserrat';
+  @include mq(tablet) {
+    @include fonts($fw: 400, $fs: 16px, $lh: 130%, $color: #5c5c5c);
+    width: 336px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 63px;
+    margin-bottom: 32px;
+  }
+}
+
+.form-blog {
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  @include mq(phone) {
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 18px;
+  }
+  @include mq(tablet) {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 28px;
+  }
+  @include mq(desktop) {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 28px;
+  }
+}
+
+.modal-subscribe-foto {
+  @include mq(phone) {
+    width: 272px;
+    height: 121px;
+    margin-bottom: 18px;
+  }
+  @include mq(tablet) {
+    width: 588px;
+    height: 271px;
+    margin-bottom: 28px;
+  }
+  @include mq(desktop) {
+    width: 428px;
+    height: 528px;
+    margin: 0;
+  }
+}
+
+.btn-madal-subscribe {
+  @include fonts($fw: 600, $fs: 18px, $lh: 1.2, $color: var(--white-cl));
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq(phone) {
+    width: 236px;
+    height: 27px;
+    padding: 10px 82px;
+  }
+  @include mq(tablet) {
+    width: 336px;
+    height: 50px;
+    padding: 14px 122px;
+  }
+}
