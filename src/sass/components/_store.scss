@@ -33,7 +33,7 @@
 
   .store__card:hover &,
   .store__card:focus & {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   @include mq(tablet) {
     max-width: 344px;
