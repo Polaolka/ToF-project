@@ -121,6 +121,41 @@
   }
 }
 
+.modal-subscribe-foto1 {
+  @media screen and (min-width: 320px) {
+    display: block;
+    width: 272px;
+    height: 121px;
+    margin-bottom: 18px;
+  }
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.modal-subscribe-foto2 {
+  display: none;
+  @media screen and (min-width: 767px) {
+    width: 588px;
+    height: 271px;
+    margin-bottom: 28px;
+    display: block;
+  }
+  @media screen and (min-width: 1279px) {
+    display: none;
+  }
+}
+
+.modal-subscribe-foto3 {
+  display: none;
+  @media screen and (min-width: 1279px) {
+    width: 428px;
+    height: 528px;
+    margin: 0;
+    display: block;
+  }
+}
+
 .btn-madal-subscribe {
   @include fonts($fw: 600, $fs: 18px, $lh: 1.2, $color: var(--white-cl));
   border-radius: 8px;
