@@ -1,0 +1,142 @@
+/* DELIVERY */
+
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+.delivery-description {
+  font-family: 'Montserrat';
+  @include fonts($fw: 700, $fs: 44px, $lh: 1.2, $color: var(--main-text-cl));
+  display: flex;
+  align-items: center;
+}
+
+.delivery-description::after {
+  content: '';
+  height: 1px;
+  width: 958px;
+  background-color: black;
+  display: block;
+  margin-left: 16px;
+}
+
+.delivery-number {
+  border: 1px solid black;
+  border-radius: 50%;
+  font-family: 'Montserrat';
+  @include fonts($fw: 500, $fs: 26px, $lh: 1.2, $color: var(--main-text-cl));
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  @include mq(phone) {
+    @include fonts($fw: 500, $fs: 20px, $lh: 1.2, $color: var(--main-text-cl));
+    padding: 8px 16px;
+    width: 40px;
+    height: 40px;
+  }
+  @include mq(tablet) {
+    padding: 16px 24px 16px 25px;
+    width: 64px;
+    height: 64px;
+    @include fonts($fw: 500, $fs: 26px, $lh: 1.2, $color: var(--main-text-cl));
+  }
+  @include mq(desktop) {
+  }
+}
+
+.delivery-item {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat';
+  @include mq(phone) {
+    @include fonts($fw: 500, $fs: 14px, $lh: 1.2, $color: var(--main-text-cl));
+    gap: 8px;
+  }
+  @include mq(tablet) {
+    @include fonts($fw: 500, $fs: 24px, $lh: 1.2, $color: var(--main-text-cl));
+    width: 666px;
+    gap: 20px;
+  }
+  @include mq(desktop) {
+    width: 978px;
+    @include fonts($fw: 500, $fs: 32px, $lh: 1.2, $color: var(--main-text-cl));
+    gap: 56px;
+  }
+}
+
+.delivery-list {
+  display: flex;
+  flex-direction: column;
+  @include mq(phone) {
+    margin-bottom: 40px;
+    gap: 8px;
+  }
+  @include mq(tablet) {
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  @include mq(desktop) {
+    padding: 0 70px;
+    margin-bottom: 60px;
+    gap: 30px;
+  }
+}
+
+.delivery-description {
+  margin-bottom: 80px;
+}
+
+.blog-text-follow {
+  @include fonts($fw: 500, $fs: 32px, $lh: 1.2, $color: var(--main-text-cl));
+}
+
+.backdrop-modal-blog-title {
+  @include fonts($fw: 600, $fs: 28px, $lh: 1.2, $color: var(--main-text-cl));
+}
+
+.backdrop-modal-blog-text {
+  @include fonts($fw: 400, $fs: 16px, $lh: 130%, $color: var(--main-text-cl));
+
+  text-align: center;
+  color: #5c5c5c;
+}
+
+.form-blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.backdrop-modal-blog {
+  width: 860px;
+}
+
+.form-blog-label {
+  @include fonts($fw: 600, $fs: 14px, $lh: 1.2, $color: var(--main-text-cl));
+  color: #5c5c5c;
+}
+
+.form-blog-input {
+  @include fonts($fw: 600, $fs: 14px, $lh: 1.2, $color: var(--main-text-cl));
+  color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  padding-left: 12px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+.subtitle {
+  @include mq(tablet) {
+  }
+}
+
+.delivery-foto {
+  margin-left: auto;
+  margin-right: auto;
+}
