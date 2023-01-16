@@ -1,63 +1,45 @@
 <div class="modal-subscribe">
   <div class="modal-subscribe-wrapper">
-    <!-- <img
-      srcset="
-        ./images/modal(subscribe)/sub-mb@1x.jpg 1x,
-        ./images/modal(subscribe)/sub-mb@2x.jpg 2x
-      "
-      class="modal-subscribe-foto1"
-    /> -->
     <picture>
-      <source srcset="./images/modal(subscribe)/sub-mb@1x.jpg 1x" />
-      <img src="./images/modal(subscribe)/sub-mb@1x.jpg" alt="" />
+      <source
+        srcset="
+          ./images/modal(subscribe)/sub-mb@1x.jpg  1x,
+          ./images/modal(subscribe)/sub-mb@2x.jpg  2x,
+          ./images/modal(subscribe)/sub-mb@1x.webp 1x,
+          ./images/modal(subscribe)/sub-mb@2x.webp
+        "
+        media="(max-width:767.98px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/modal(subscribe)/sub-tb@1x.jpg  1x,
+          ./images/modal(subscribe)/sub-tb@2x.jpg  2x,
+          ./images/modal(subscribe)/sub-tb@1x.webp 1x,
+          ./images/modal(subscribe)/sub-tb@2x.webp 2x
+        "
+        media="(max-width:1279.98px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/modal(subscribe)/sub-dt@1x.jpg  1x,
+          ./images/modal(subscribe)/sub-dt@2x.jpg  2x,
+          ./images/modal(subscribe)/sub-dt@1x.webp 1x,
+          ./images/modal(subscribe)/sub-dt@2x.webp 2x
+        "
+        media="(min-width:1280px)"
+        type="image/webp"
+      />
+      <img src="./images/modal(subscribe)/sub-tb@1x.jpg" alt="" />
     </picture>
-    <!-- <img
-      srcset="
-        ./images/modal(subscribe)/sub-mb@1x.webp 1x,
-        ./images/modal(subscribe)/sub-mb@2x.webp 2x
-      "
-      media="(min-width:320px)"
-      type="image/webp"
-      class="modal-subscribe-foto1web"
-    /> -->
-    <!-- <img
-      srcset="
-        ./images/modal(subscribe)/sub-tb@1x.jpg 1x,
-        ./images/modal(subscribe)/sub-tb@2x.jpg 2x
-      "
-      class="modal-subscribe-foto2"
-    /> -->
-    <!-- <img
-      srcset="
-        ./images/modal(subscribe)/sub-tb@1x.webp 1x,
-        ./images/modal(subscribe)/sub-tb@2x.webp 2x
-      "
-      media="(min-width:768px)"
-      type="image/webp"
-      class="modal-subscribe-foto"
-    /> -->
-    <!-- <img
-      srcset="
-        ./images/modal(subscribe)/sub-dt@1x.jpg 1x,
-        ./images/modal(subscribe)/sub-dt@2x.jpg 2x
-      "
-      class="modal-subscribe-foto3"
-    /> -->
-    <!-- <img
-      srcset="
-        ./images/modal(subscribe)/sub-dt@1x.webp 1x,
-        ./images/modal(subscribe)/sub-dt@2x.webp 2x
-      "
-      media="(min-width:1280px)"
-      type="image/webp"
-      class="modal-subscribe-foto"
-    /> -->
-    <!-- <img
-      class="modal-subscribe-foto"
-      src="./images/modal(subscribe)/sub-dt@1x.jpg"
-      alt=""
-    /> -->
+
     <div class="modal-subscribe-information-wrapper">
+      <button class="modal-subscribe-icon-button-close">
+        <svg class="modal-subscribe-icon-close" width="" height="">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
       <h3 class="backdrop-modal-blog-title">Follow to our newsletter</h3>
       <p class="backdrop-modal-blog-text">
         Be the first to get exclusive offers and the latest news on our product
@@ -72,7 +54,7 @@
           class="form-blog-input"
         />
       </form>
-      <button class="btn btn-madal-subscribe">Subscribe</button>
+      <button class="btn btn-modal-subscribe">Subscribe</button>
     </div>
   </div>
 </div>
