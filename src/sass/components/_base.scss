@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.body {
+    font-family: var(--main-font);
+}
+
 .section {
     @extend %section;
 }
