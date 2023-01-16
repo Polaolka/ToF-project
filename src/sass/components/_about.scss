@@ -28,7 +28,7 @@
 }
 
 .about__text {
-  margin-bottom: 36px;
+  margin-bottom: 16px;
   @include fonts($fw: 400, $fs: 16px, $lh: 1.25);
 
   @include mq(tablet) {
