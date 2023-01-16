@@ -1,0 +1,60 @@
+<div class="modal-subscribe">
+  <div class="modal-subscribe-wrapper">
+    <picture>
+      <source
+        srcset="
+          ./images/modal(subscribe)/sub-mb@1x.jpg  1x,
+          ./images/modal(subscribe)/sub-mb@2x.jpg  2x,
+          ./images/modal(subscribe)/sub-mb@1x.webp 1x,
+          ./images/modal(subscribe)/sub-mb@2x.webp
+        "
+        media="(max-width:767.98px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/modal(subscribe)/sub-tb@1x.jpg  1x,
+          ./images/modal(subscribe)/sub-tb@2x.jpg  2x,
+          ./images/modal(subscribe)/sub-tb@1x.webp 1x,
+          ./images/modal(subscribe)/sub-tb@2x.webp 2x
+        "
+        media="(max-width:1279.98px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/modal(subscribe)/sub-dt@1x.jpg  1x,
+          ./images/modal(subscribe)/sub-dt@2x.jpg  2x,
+          ./images/modal(subscribe)/sub-dt@1x.webp 1x,
+          ./images/modal(subscribe)/sub-dt@2x.webp 2x
+        "
+        media="(min-width:1280px)"
+        type="image/webp"
+      />
+      <img src="./images/modal(subscribe)/sub-tb@1x.jpg" alt="" />
+    </picture>
+
+    <div class="modal-subscribe-information-wrapper">
+      <button class="modal-subscribe-icon-button-close">
+        <svg class="modal-subscribe-icon-close" width="" height="">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h3 class="backdrop-modal-blog-title">Follow to our newsletter</h3>
+      <p class="backdrop-modal-blog-text">
+        Be the first to get exclusive offers and the latest news on our product
+        directly in your box.
+      </p>
+      <form class="form-blog">
+        <label for="email" class="form-blog-label">Email</label>
+        <input
+          type="email"
+          name="mail"
+          placeholder="Your email"
+          class="form-blog-input"
+        />
+      </form>
+      <button class="btn btn-modal-subscribe">Subscribe</button>
+    </div>
+  </div>
+</div>
