@@ -1,4 +1,4 @@
-.modal-subscribe {
+.subscribe {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.modal-subscribe-wrapper {
+.subscribe__wrapper {
   @include mq(phone) {
     width: 272px;
   }
@@ -31,7 +31,7 @@
   position: relative;
 }
 
-.modal-subscribe-information-wrapper {
+.subscribe__information-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,7 +54,7 @@
   }
 }
 
-.backdrop-modal-blog-title {
+.subscribe__blog-title {
   font-family: 'Montserrat';
   @include mq(phone) {
     @include fonts($fw: 600, $fs: 18px, $lh: 1.2, $color: var(--main-text-cl));
@@ -72,7 +72,7 @@
   }
 }
 
-.backdrop-modal-blog-text {
+.subscribe__blog-text {
   font-family: 'Montserrat';
   @include mq(phone) {
     @include fonts($fw: 400, $fs: 12px, $lh: 130%, $color: var(--main-text-cl));
@@ -127,7 +127,7 @@
   }
 }
 
-.btn-modal-subscribe {
+.subscribe__btn {
   @include fonts($fw: 600, $fs: 18px, $lh: 1.2, $color: var(--white-cl));
   border-radius: 8px;
   display: flex;
@@ -165,7 +165,7 @@
   }
 }
 
-.modal-subscribe-icon-button-close {
+.subscribe__icon-button-close {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -181,7 +181,7 @@
   }
 }
 
-.modal-subscribe-icon-close {
+.subscribe__icon-close {
   stroke: var(--main-text-cl);
   @include mq(phone) {
     width: 18px;
@@ -194,5 +194,4 @@
 }
 
 .modal-subscribe {
-  display: none;
 }
