@@ -184,3 +184,24 @@
     background: #e86f54;
   }
 }
+
+.modal-gratitude-img {
+  @media screen and (min-width: 768px) {
+    width: 367px;
+    height: 202px;
+  }
+}
+
+.modal-gratitude {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-gratitude-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
