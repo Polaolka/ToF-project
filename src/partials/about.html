@@ -1,6 +1,51 @@
 <section class="section about" id="about-us">
-    <div class="container">
-        <h2 class="subtitle">about</h2>
+  <div class="container">
+    <h2 class="about__title subtitle">about</h2>
+    <div class="about__wrapper">
+     <p class="about__text">
+        We are a minimalistic flower studio. We love people and flowers.
+        Therefore, every day we give people the beauty and joy creating stylish
+        and modern masterpieces. Every bouquet we create is unique as you are.
+      </p>
+      <picture>   
+        <source
+          srcset="
+            ./images/about/about-mb@1x.png  1x,
+            ./images/about/about-mb@2x.png  2x,
+            ./images/about/about-mb-1x.webp 1x,
+            ./images/about/about-mb-2x.webp 2x
+          "
+          media="(max-width: 767.98px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/about/about-tb@1x.png  1x,
+            ./images/about/about-tb@2x.png  2x,
+            ./images/about/about-tb-1x.webp 1x,
+            ./images/about/about-tb-2x.webp 2x
+          "
+          media="(max-width: 1279.98px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/about/about-dt@1x.png 1x,
+            ./images/about/about-dt@2x.png 2x,
+            ./images/about/about-dt-1x.webp 1x,
+            ./images/about/about-dt-2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <img
+          class="about__img"
+          src="./images/about/about-dt@1x.png"
+          alt="flovers"
+          width="632px"
+          height="344px"
+        />
+      </picture>
     </div>
-
+  </div>
 </section>
