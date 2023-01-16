@@ -34,20 +34,26 @@
 }
 
 .header__wrapper {
-  // position: relative;
+  position: relative;
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
   @include mq(tablet) {
     align-items: center;
+    gap: 80px;
+  }
+  @include mq(desktop) {
+    align-items: center;
+    gap: 261px;
   }
 }
 
 .header__tel-btn {
     position: absolute;
-    top: 20px;
-    right: 60px;
+    top: 4px;
+    right: 38px;
     padding: 0;
     border: none;
     background-color: transparent;
@@ -55,7 +61,8 @@
 
   @include mq(tablet) {
     margin-left: 0;
-    top: 40px;
+    top: 24px;
+    right: 24px;
   }
 
   .mobile-menu__btn.is-active ~ & {
@@ -74,12 +81,14 @@
 
   @include mq(tablet) {
     display: block;
-    margin-right: 99px;
+    margin-right: auto;
   }
+
 }
 
 .nav__list {
   display: flex;
+  margin-right: auto;
 
   @include mq(tablet) {
     display: flex;
