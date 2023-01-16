@@ -4,6 +4,7 @@
   padding-top: 16px;
   background-color: var(--white-cl);
   position: sticky;
+    // position: fixed;
   top: 0;
   z-index: 1000;
 
@@ -11,11 +12,14 @@
     background-color: transparent;
   }
 }
+// .header + .about {
+//     padding-top: 60px;
+// }
 
 .logo {
-    .mobile-menu__btn.is-active ~ & {
-        opacity: 0;
-    }
+  .mobile-menu__btn.is-active ~ & {
+    opacity: 0;
+  }
 }
 
 .logo__icon {
@@ -40,24 +44,29 @@
   }
 }
 
-.header__link {
-  padding-top: 3px;
-  margin-left: auto;
+.header__tel-btn {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
 
   @include mq(tablet) {
     margin-left: 0;
+    top: 40px;
   }
 
   .mobile-menu__btn.is-active ~ & {
     opacity: 0;
-}
+  }
 }
 
 .header__icon {
   width: 25px;
   height: 25px;
-  margin-left: auto;
-  margin-right: 40px;
+
 }
 
 .navigation {
@@ -65,6 +74,7 @@
 
   @include mq(tablet) {
     display: block;
+    margin-right: 99px;
   }
 }
 
