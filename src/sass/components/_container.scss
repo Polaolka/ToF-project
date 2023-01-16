@@ -27,6 +27,8 @@
     padding-left: 16px;
     padding-right: 16px;
   
+   
+
     @include mq(tablet) {
       max-width: 768px;
       padding-left: 24px;
