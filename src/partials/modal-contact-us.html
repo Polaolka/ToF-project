@@ -1,15 +1,19 @@
-<div class="backdrop">
+<div data-modal class="backdrop is-hidden">
   <div class="modal">
-    <button class="modal__exit"></button>
+    <button data-modal-close class="modal__exit">
+      <svg class="modal__exit-svg" width="18" height="18">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
     <form class="modal__form" autocomplete="on">
-      <b>Contact us</b>
-      <p>
+      <b class="modal-head">Contact us</b>
+      <p class="modal-text">
         If you have any additional questions or you want to clarify something
         before you make an order please fill in your contact details. We will
         call you back.
       </p>
       <label class="form__label">
-        <span>Name</span>
+        <span class="form__label-name">Name</span>
         <input
           type="text"
           class="form__input"
@@ -18,7 +22,7 @@
         />
       </label>
       <label class="form__label">
-        <span>Email</span>
+        <span class="form__label-name">Email</span>
         <input
           type="email"
           class="form__input"
@@ -26,7 +30,7 @@
           placeholder="Your email"
         />
       </label>
-      <button type="submit">Send</button>
+      <button class="modal__btn" type="submit">Send</button>
     </form>
   </div>
 </div>
