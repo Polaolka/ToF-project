@@ -15,22 +15,6 @@
   }
 }
 
-.delivery-description {
-  font-family: 'Montserrat';
-  @include fonts($fw: 700, $fs: 44px, $lh: 1.2, $color: var(--main-text-cl));
-  display: flex;
-  align-items: center;
-}
-
-.delivery-description::after {
-  content: '';
-  height: 1px;
-  width: 958px;
-  background-color: black;
-  display: block;
-  margin-left: 16px;
-}
-
 .delivery__number {
   border: 1px solid black;
   border-radius: 50%;
@@ -54,14 +38,10 @@
   }
 }
 
-.delivery__item {
-  display: flex;
-  align-items: center;
-  font-family: 'Montserrat';
-  @include mq(phone) {
-    @include fonts($fw: 500, $fs: 14px, $lh: 1.2, $color: var(--main-text-cl));
-    gap: 8px;
-  }
+.delivery__txt {
+  width: calc(100% - 48px);
+  @include fonts($fw: 500, $fs: 14px, $lh: 1.2, $color: var(--main-text-cl));
+
   @include mq(tablet) {
     @include fonts($fw: 500, $fs: 24px, $lh: 1.2, $color: var(--main-text-cl));
     width: calc(100% - 84px);
