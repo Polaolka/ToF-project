@@ -6,4 +6,4 @@ let topBtn = document.querySelector(".page-up");
 topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
 // On scroll, Show/Hide the btn with animation
-window.onscroll = () => window.scrollY > 400 ? topBtn.style.opacity = 1 : topBtn.style.opacity = 0
+window.onscroll = () => window.scrollY > 400 ? topBtn.style.opacity = 1 : topBtn.style.opacity = 0;
