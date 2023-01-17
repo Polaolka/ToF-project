@@ -1,9 +1,9 @@
 .swiper {
-  // --swiper-navigation-size: 160px;
+  --swiper-navigation-size: 110px;
 
   left: 50%;
   transform: translateX(-50%);
-  width: 413px;
+  width: 450px;
   height: 181px;
 
   @include mq(tablet) {
@@ -13,6 +13,7 @@
     height: 398px;
   }
   @include mq(desktop) {
+    width: 1165px;
     height: 421px;
   }
 }
@@ -29,11 +30,37 @@
 }
 
 .swiper-button-next {
-  right: calc(50% - 380px) !important;
-  left: auto;
+    right: calc(50% - 160px) !important;
+    left: auto;
+
+  @include mq(tablet) {
+    right: calc(50% - 376px) !important;
+    left: auto;
+  }
+
+  @include mq(desktop) {
+    right: calc(50% - 556px) !important;
+    left: auto;
+  }
+
 }
 
 .swiper-button-prev {
-  left: calc(50% - 380px) !important;
+  left: calc(50% - 160px) !important;
   right: auto;
+
+//   @include mq(tablet) {
+//     left: calc(50% - 200px) !important;
+//     right: auto;
+//   }
+
+  @include mq(tablet) {
+    left: calc(50% - 375px) !important;
+    right: auto;
+  }
+
+  @include mq(desktop) {
+    left: calc(50% - 575px) !important;
+    right: auto;
+  }
 }
