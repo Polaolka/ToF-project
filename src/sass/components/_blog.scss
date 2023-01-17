@@ -7,7 +7,10 @@
 .blog-text-follow {
   display: flex;
   justify-content: center;
-
+  @include fonts($fw: 500, $fs: 18px, $lh: 1.2, $color: var(--main-text-cl));
+  margin-top: 28px;
+  margin-bottom: 32px;
+  @include mq(phone) {
     @include fonts($fw: 500, $fs: 18px, $lh: 1.2, $color: var(--main-text-cl));
     margin-top: 28px;
     margin-bottom: 32px;
