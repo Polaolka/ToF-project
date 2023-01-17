@@ -40,6 +40,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 28px;
   @include mq(phone) {
     width: 240px;
     margin-left: auto;
@@ -60,6 +64,9 @@
 
 .subscribe__blog-title {
   font-family: 'Montserrat';
+  @include fonts($fw: 600, $fs: 18px, $lh: 1.2, $color: var(--main-text-cl));
+  margin-bottom: 14px;
+  margin-top: 18px;
   @include mq(phone) {
     @include fonts($fw: 600, $fs: 18px, $lh: 1.2, $color: var(--main-text-cl));
     margin-bottom: 14px;
@@ -78,6 +85,8 @@
 
 .subscribe__blog-text {
   font-family: 'Montserrat';
+  @include fonts($fw: 400, $fs: 12px, $lh: 130%, $color: var(--main-text-cl));
+  margin-bottom: 18px;
   @include mq(phone) {
     @include fonts($fw: 400, $fs: 12px, $lh: 130%, $color: var(--main-text-cl));
     margin-bottom: 18px;
@@ -94,8 +103,9 @@
 
 .form-blog {
   width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-bottom: 18px;
   @include mq(phone) {
     padding-left: 2px;
     padding-right: 2px;
@@ -137,6 +147,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 236px;
+  height: 27px;
+  padding: 10px 82px;
   @include mq(phone) {
     width: 236px;
     height: 27px;
@@ -171,8 +184,8 @@
 
 .subscribe__icon-button-close {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
   background-color: transparent;
   border: none;
   @include mq(phone) {
