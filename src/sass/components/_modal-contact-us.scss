@@ -29,6 +29,7 @@
   transform: translate(-50%, -50%);
 
   width: 272px;
+  min-height: 357px;
   background-color: var(--white-cl);
 
   padding: 28px 16px;
@@ -36,6 +37,7 @@
 
   @media screen and (min-width: 768px) {
     width: 480px;
+    min-height: 511px;
     padding: 48px 32px;
   }
 }
@@ -81,8 +83,6 @@
 }
 
 .modal-text {
-  display: inline-block;
-
   margin-bottom: 18px;
 
   font-weight: 500;
@@ -95,6 +95,10 @@
     font-size: 16px;
     margin-bottom: 32px;
   }
+}
+
+.modal-text--center {
+  text-align: center;
 }
 
 .form__label {
@@ -113,8 +117,6 @@
     font-size: 14px;
     margin-bottom: 24px;
   }
-
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
   &:last-of-type {
     margin-bottom: 24px;
@@ -179,8 +181,7 @@
     font-size: 18px;
   }
 
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  .form__input:not(:placeholder-shown):valid + & {
+  &:disabled {
     background: rgba(232, 111, 84, 0.4);
   }
 }
