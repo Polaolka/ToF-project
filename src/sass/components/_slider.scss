@@ -1,0 +1,23 @@
+.swiper {
+    width: 100%;
+    height: 181px;
+    @include mq(tablet) {
+      height: 398px;
+    }
+    @include mq(desktop) {
+      height: 421px;
+    }
+  }
+
+.swiper-button-prev, 
+.swiper-button-next {
+    &::before,
+    &::after {
+        display: none;
+    }
+}
+.swiper-slide {
+    width: 153px;
+    height: 181px;
+
+}
