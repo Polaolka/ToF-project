@@ -16,6 +16,10 @@
   align-items: center;
 }
 
+.is-hidden {
+  display: none;
+}
+
 .subscribe__wrapper {
   @include mq(phone) {
     width: 272px;
