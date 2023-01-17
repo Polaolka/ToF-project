@@ -59,7 +59,7 @@
 }
 
 .subscribe__blog-title {
-  font-family: 'Montserrat';
+   
   @include mq(phone) {
     @include fonts($fw: 600, $fs: 18px, $lh: 1.2, $color: var(--main-text-cl));
     margin-bottom: 14px;
@@ -77,7 +77,7 @@
 }
 
 .subscribe__blog-text {
-  font-family: 'Montserrat';
+   
   @include mq(phone) {
     @include fonts($fw: 400, $fs: 12px, $lh: 130%, $color: var(--main-text-cl));
     margin-bottom: 18px;
@@ -160,7 +160,7 @@
 }
 
 .form-blog-label {
-  font-family: 'Montserrat';
+   
   @include mq(phone) {
     @include fonts($fw: 500, $fs: 10px, $lh: 1.2, $color: #5c5c5c);
   }
