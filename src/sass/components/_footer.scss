@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   padding-top: 32px;
   padding-bottom: 32px;
-  gap: 32px;
+  gap: 30px;
   @include mq(tablet) {
     flex-wrap: nowrap;
     gap: 44px;
@@ -37,7 +37,7 @@
 .container__footer .wth {
   display: flex;
   flex-wrap: wrap;
-  width: calc((100% - 32px) / 2);
+  width: calc((100% - 30px) / 2);
   @include mq(tablet) {
     width: calc((100% - 132px) / 4);
   }
