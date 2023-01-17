@@ -1,2 +1,0 @@
-new Swiper(".swiper",{speed:400,spaceBetween:100,slidesPerView:3,spaceBetween:30,breakpoints:{320:{slidesPerView:3,spaceBetween:8},768:{slidesPerView:4,spaceBetween:32},1280:{slidesPerView:3,spaceBetween:40}},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},effect:"coverflow",coverflowEffect:{depth:100,rotate:10,slideShadows:!1,scale:.8},loop:!0});
-//# sourceMappingURL=index.024c646d.js.map
