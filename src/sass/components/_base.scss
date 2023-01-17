@@ -1,12 +1,12 @@
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+  //   scroll-padding-top: 80px;
 }
 
 body {
-    font-family: var(--main-font);
+  font-family: var(--main-font);
 }
 
 .section {
-    @extend %section;
+  @extend %section;
 }
