@@ -1,9 +1,9 @@
-@import './common';
+@import './vendors/common';
+@import './vendors/v-hidden';
 
 // utils styles
 @import './utils/variables';
 @import './utils/reset';
-@import './vendors/v-hidden';
 // @import './utils/animations';
 @import './utils/mixins';
 @import './utils/placeholder';
@@ -34,5 +34,3 @@
 @import './components/hamburger';
 @import './components/up-button';
 @import './components/spinner';
-
-// @import './example';
