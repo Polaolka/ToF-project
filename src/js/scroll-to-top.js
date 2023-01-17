@@ -11,3 +11,7 @@ window.onscroll = () =>
   window.scrollY > 400
     ? (topBtn.style.opacity = 1)
     : (topBtn.style.opacity = 0);
+
+// document.location.href = "#top";
+// window.scrollTo(top);
+// document.querySelector('.hero').scroll({ top: '-50%', behavior: 'smooth' });
