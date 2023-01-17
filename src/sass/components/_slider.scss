@@ -13,7 +13,7 @@
     height: 398px;
   }
   @include mq(desktop) {
-    width: 1165px;
+    width: 1180px;
     height: 421px;
   }
 }
@@ -30,16 +30,20 @@
 }
 
 .swiper-button-next {
-    right: calc(50% - 160px) !important;
+  right: calc(50% - 160px) !important;
     left: auto;
 
+  @include mq(phone) {
+    right: calc(50% - 200px) !important;
+    left: auto;
+  }
   @include mq(tablet) {
-    right: calc(50% - 376px) !important;
+    right: calc(50% - 380px) !important;
     left: auto;
   }
 
   @include mq(desktop) {
-    right: calc(50% - 556px) !important;
+    right: calc(50% - 590px) !important;
     left: auto;
   }
 
@@ -49,18 +53,18 @@
   left: calc(50% - 160px) !important;
   right: auto;
 
-//   @include mq(tablet) {
-//     left: calc(50% - 200px) !important;
-//     right: auto;
-//   }
+  @include mq(phone) {
+    left: calc(50% - 200px) !important;
+    right: auto;
+  }
 
   @include mq(tablet) {
-    left: calc(50% - 375px) !important;
+    left: calc(50% - 380px) !important;
     right: auto;
   }
 
   @include mq(desktop) {
-    left: calc(50% - 575px) !important;
+    left: calc(50% - 590px) !important;
     right: auto;
   }
 }
