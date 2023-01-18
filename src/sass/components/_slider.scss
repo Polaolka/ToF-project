@@ -43,7 +43,7 @@
   }
 
   @include mq(desktop) {
-    right: calc(50% - 590px) !important;
+    right: calc(50% - 560px) !important;
     left: auto;
   }
 
@@ -64,7 +64,7 @@
   }
 
   @include mq(desktop) {
-    left: calc(50% - 590px) !important;
+    left: calc(50% - 560px) !important;
     right: auto;
   }
 }
