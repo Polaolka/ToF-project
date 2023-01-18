@@ -5,7 +5,7 @@
     <div class="hero__img">
       <picture>
         <source
-          media="(min-width:1200px)"
+          media="(min-width:1280px)"
           srcset="
             ./images/hero/hero-dt@2x.webp 2x,
             ./images/hero/hero-dt@1x.webp 1x
@@ -29,10 +29,10 @@
           type="image/webp"
         />
         <source
-          media="(min-width:1200px)"
+          media="(min-width:1280px)"
           srcset="
-            ./images/hero/hero-dt@2x.webp 2x,
-            ./images/hero/hero-dt@1x.webp 1x
+            ./images/hero/hero-dt@2x.png 2x,
+            ./images/hero/hero-dt@1x.png 1x
           "
           type="image/png"
         />
@@ -55,12 +55,17 @@
         <img
           src="./images/hero/hero-mb@1x.png"
           alt="flower"
+          loading="lazy"
           width="390px"
           height="693px"
         />
       </picture>
     </div>
-    <button data-modal-open class="hero__btn hero__btn-anim" type="button">
+    <button
+      data-modal-open
+      class="hero__btn hero__btn-anim rotate-90-cw"
+      type="button"
+    >
       <svg class="hero__btn-svg" width="64" height="76">
         <use
           class="hero__btn-svg--md"
