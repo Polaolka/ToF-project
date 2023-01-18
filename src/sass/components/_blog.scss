@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-.blog-text-follow {
+.blog__text-follow {
   display: flex;
   justify-content: center;
   @include fonts($fw: 500, $fs: 18px, $lh: 1.2, $color: var(--main-text-cl));
@@ -27,7 +27,7 @@
   }
 }
 
-.blog-foto {
+.blog__foto {
 
     width: 153px;
     height: 181px;
