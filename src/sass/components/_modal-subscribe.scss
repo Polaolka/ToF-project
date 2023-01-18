@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 1000000;
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.4),
@@ -63,7 +63,6 @@
 }
 
 .subscribe__blog-title {
- 
   @include fonts($fw: 600, $fs: 18px, $lh: 1.2, $color: var(--main-text-cl));
   margin-bottom: 14px;
   margin-top: 18px;
@@ -84,7 +83,6 @@
 }
 
 .subscribe__blog-text {
- 
   @include fonts($fw: 400, $fs: 12px, $lh: 130%, $color: var(--main-text-cl));
   margin-bottom: 18px;
   @include mq(phone) {

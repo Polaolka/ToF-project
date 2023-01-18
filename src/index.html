@@ -19,7 +19,6 @@
     <meta property="og:image" content="./images/store/tb/store60$-tb@1x.jpg" />
     <meta property="og:locale" content="en" />
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +27,7 @@
     />
 
     <!-- Animation-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--Styles-->
     <link rel="stylesheet" href="./sass/index.scss" />
     <!-- Favicons -->
@@ -54,21 +53,25 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/store.html"></include>
-    <include src="./partials/delivery.html"></include>
-    <include src="./partials/blog.html"></include>
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/modal-contact-us.html"></include>
-    <include src="./partials/modal-subscribe.html"></include>
-    <include src="./partials/modal-thank-you.html"></include>
-    <include src="./partials/mobile-menu.html"></include>
-    <include src="./partials/up-button.html"></include>
+    <div class="page">
+      <include src="./partials/header.html"></include>
+      <main>
+        <include src="./partials/hero.html"></include>
+        <include src="./partials/about.html"></include>
+        <include src="./partials/store.html"></include>
+        <include src="./partials/delivery.html"></include>
+        <include src="./partials/blog.html"></include>
+        <include src="./partials/hero.html"></include>
+      </main>
+      <include src="./partials/footer.html"></include>
+  
+      <include src="./partials/modal-contact-us.html"></include>
+      <include src="./partials/modal-subscribe.html"></include>
+      <include src="./partials/mobile-menu.html"></include>
+      <include src="./partials/up-button.html"></include>
+    </div>
 
-    <!-- <include src="./partials/example.html"></include> -->
-   
+
     <!--Librery-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/aos.js"></script>

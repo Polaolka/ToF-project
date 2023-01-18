@@ -2,24 +2,28 @@
   color: var(--white-cl);
   background-color: var(--main-text-cl);
   font-family: var(--secondary-font);
-}
-.container__footer {
-  display: flex;
-  flex-wrap: wrap;
   padding-top: 32px;
   padding-bottom: 32px;
-  gap: 30px;
   @include mq(tablet) {
-    flex-wrap: nowrap;
-    gap: 44px;
     padding-top: 60px;
     padding-bottom: 54px;
   }
   @include mq(desktop) {
-    flex-wrap: nowrap;
-    gap: 96px;
     padding-top: 72px;
     padding-bottom: 72px;
+  }
+}
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  @include mq(tablet) {
+    flex-wrap: nowrap;
+    gap: 44px;
+  }
+  @include mq(desktop) {
+    flex-wrap: nowrap;
+    gap: 96px;
   }
 }
 .footer__logo {
