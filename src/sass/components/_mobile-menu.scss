@@ -23,40 +23,12 @@
 }
 
 .mobile-menu__btn {
-    position: absolute;
-    top: 4px;
-    right: 0;
     padding: 0;
-	// background-color: transparent;
-	// cursor: pointer;
-	// border: none;
+    order: 4;
     z-index: 999;
 
 }
-// .mobile-menu__btn {
-// 	min-height: 12px;
-// 	min-width: 12px;
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: center;
-//     color: var(--white-cl);
 
-// 	margin-left: auto;
-// 	padding: 0;
-// 	background-color: transparent;
-// 	cursor: pointer;
-// 	border: none;
-
-// 	&.js-close-menu {
-// 		position: absolute;
-// 		top: 16px;
-// 		right: 16px;
-// 	}
-
-// 	@media (min-width: 768px) {
-// 		display: none;
-// 	}
-// }
 .mobile-menu__list {
     margin: auto;
     display: flex;
