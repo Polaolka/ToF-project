@@ -3,6 +3,10 @@ html {
   scroll-padding-top: 80px;
 }
 
+.page {
+  overflow: hidden;
+}
+
 body {
   font-family: var(--main-font);
 }
