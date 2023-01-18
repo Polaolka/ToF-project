@@ -13,7 +13,7 @@
     height: 398px;
   }
   @include mq(desktop) {
-    width: 1180px;
+    width: 1120px;
     height: 421px;
   }
 }
@@ -46,7 +46,7 @@
   }
 
   @include mq(desktop) {
-    right: calc(50% - 560px) !important;
+    right: calc(50% - 513px) !important;
     left: auto;
   }
 
@@ -68,7 +68,7 @@
   }
 
   @include mq(desktop) {
-    left: calc(50% - 560px) !important;
+    left: calc(50% - 540px) !important;
     right: auto;
   }
 }
