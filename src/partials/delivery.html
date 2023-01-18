@@ -1,41 +1,62 @@
-<section class="section about delivery" id="delivery">
+<section class="section delivery" id="delivery">
   <div class="container">
     <h2 class="subtitle">DELIVERY</h2>
-    <ul class="delivery-list">
-      <li class="delivery-item">
-        <span class="delivery-number">1</span>Choose your bouquet and make an
-        order on website
+    <ul class="delivery__list list">
+      <li class="delivery__item">
+        <div class="delivery__number">1</div>
+        <p class="delivery__txt">
+          Choose your bouquet and make an order on website
+        </p>
       </li>
-      <li class="delivery-item">
-        <span class="delivery-number">2</span>
-        Wait for the call to clarify the details of the order. You can pay
-        online or to the courier
+      <li class="delivery__item">
+        <div class="delivery__number">2</div>
+        <p class="delivery__txt">
+          Wait for the call to clarify the details of the order. You can pay
+          online or to the courier
+        </p>
       </li>
-      <li class="delivery-item">
-        <span class="delivery-number">3</span>
-        Wait for the delivery at the selected time or pick up the order from the
-        store
+      <li class="delivery__item">
+        <div class="delivery__number">3</div>
+        <p class="delivery__txt">
+          Wait for the delivery at the selected time or pick up the order from
+          the store
+        </p>
       </li>
-      <li class="delivery-item">
-        <span class="delivery-number">4</span>Make someone happy or enjoy
-        yourself
+      <li class="delivery__item">
+        <div class="delivery__number">4</div>
+        <p class="delivery__txt">Make someone happy or enjoy yourself</p>
       </li>
     </ul>
   </div>
-  <img
-    srcset="
-      ./images/delivery/del-dt@1x.jpg 1x,
-      ./images/delivery/del-dt@2x.jpg 2x
-    "
-    src="./images/delivery/del-dt@1x.jpg"
-    alt=""
-    class="delivery-foto"
-  />
-  <source
-    srcset="
-      ./images/delivery/del-dt@1x.jpg 1x,
-      ./images/delivery/del-dt@2x.jpg 2x
-    "
-    media="(max-width:767.98)"
-  />
+  <picture>
+    <source
+      srcset="
+        ./images/delivery/del-tb@1x.jpg  1x,
+        ./images/delivery/del-tb@2x.jpg  2x,
+        ./images/delivery/del-tb-1x.webp 1x,
+        ./images/delivery/del-tb-2x.webp 2x
+      "
+      media="(max-width:1279.98px)"
+    />
+    <source
+      srcset="
+        ./images/delivery/del-mb@1x.jpg  1x,
+        ./images/delivery/del-mb@2x.jpg  2x,
+        ./images/delivery/del-mb-1x.webp 1x,
+        ./images/delivery/del-mb-2x.webp 2x
+      "
+      media="(max-width: 767.98px)"
+    />
+    <source
+      srcset="
+        ./images/delivery/del-dt@1x.jpg  1x,
+        ./images/delivery/del-dt@2x.jpg  2x,
+        ./images/delivery/del-dt-1x.webp 1x,
+        ./images/delivery/del-dt-2x.webp 2x
+      "
+      media="(min-width:1280px)"
+    />
+    <img src="./images/delivery/del-dt@1x.jpg" class="delivery-foto" alt="" />
+  </picture>
 </section>
+

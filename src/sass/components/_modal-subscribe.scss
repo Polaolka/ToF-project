@@ -1,4 +1,4 @@
-.modal-subscribe {
+.subscribe {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,7 +16,11 @@
   align-items: center;
 }
 
-.modal-subscribe-wrapper {
+.is-hidden {
+  display: none;
+}
+
+.subscribe__wrapper {
   @include mq(phone) {
     width: 272px;
   }
@@ -31,11 +35,15 @@
   position: relative;
 }
 
-.modal-subscribe-information-wrapper {
+.subscribe__information-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 28px;
   @include mq(phone) {
     width: 240px;
     margin-left: auto;
@@ -54,8 +62,11 @@
   }
 }
 
-.backdrop-modal-blog-title {
-  font-family: 'Montserrat';
+.subscribe__blog-title {
+ 
+  @include fonts($fw: 600, $fs: 18px, $lh: 1.2, $color: var(--main-text-cl));
+  margin-bottom: 14px;
+  margin-top: 18px;
   @include mq(phone) {
     @include fonts($fw: 600, $fs: 18px, $lh: 1.2, $color: var(--main-text-cl));
     margin-bottom: 14px;
@@ -72,8 +83,10 @@
   }
 }
 
-.backdrop-modal-blog-text {
-  font-family: 'Montserrat';
+.subscribe__blog-text {
+ 
+  @include fonts($fw: 400, $fs: 12px, $lh: 130%, $color: var(--main-text-cl));
+  margin-bottom: 18px;
   @include mq(phone) {
     @include fonts($fw: 400, $fs: 12px, $lh: 130%, $color: var(--main-text-cl));
     margin-bottom: 18px;
@@ -90,8 +103,9 @@
 
 .form-blog {
   width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-bottom: 18px;
   @include mq(phone) {
     padding-left: 2px;
     padding-right: 2px;
@@ -127,12 +141,15 @@
   }
 }
 
-.btn-modal-subscribe {
+.subscribe__btn {
   @include fonts($fw: 600, $fs: 18px, $lh: 1.2, $color: var(--white-cl));
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 236px;
+  height: 27px;
+  padding: 10px 82px;
   @include mq(phone) {
     width: 236px;
     height: 27px;
@@ -156,7 +173,6 @@
 }
 
 .form-blog-label {
-  font-family: 'Montserrat';
   @include mq(phone) {
     @include fonts($fw: 500, $fs: 10px, $lh: 1.2, $color: #5c5c5c);
   }
@@ -165,10 +181,10 @@
   }
 }
 
-.modal-subscribe-icon-button-close {
+.subscribe__icon-button-close {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
   background-color: transparent;
   border: none;
   @include mq(phone) {
@@ -181,7 +197,7 @@
   }
 }
 
-.modal-subscribe-icon-close {
+.subscribe__icon-close {
   stroke: var(--main-text-cl);
   @include mq(phone) {
     width: 18px;
@@ -191,8 +207,4 @@
     width: 24px;
     height: 24px;
   }
-}
-
-.modal-subscribe {
-  display: none;
 }

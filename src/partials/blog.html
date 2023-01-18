@@ -1,52 +1,329 @@
 <section class="blog section about" id="blog">
-  <div class="container">
+  <div class="blog__wrapper container">
     <h2 class="subtitle">BLOG</h2>
-    <div class="blog-wrapper-foto">
-      <picture>
-        <source srcset="
-        ./images/blog/dt/blog2-dt@1x.jpg 1x,
-        ./images/blog/dt/blog2-dt@2x.jpg 2x,
-        ./images/blog/dt/blog2-dt-1x.webp 1x,
-        ./images/blog/dt/blog2-dt-2x.webp 2x
-        " 
-        type="image/webp"/>
-        <img src="./images/blog/dt/blog2-dt@1x.jpg" alt="" />
-      </picture>
-      <!-- <img
-        class="blog-foto"
-        srcset="
-          ./images/blog/dt/blog2-dt@1x.jpg  1x,
-          ./images/blog/dt/blog2-dt@2x.jpg  2x,
-          ./images/blog/dt/blog2-dt-1x.webp 1x,
-          ./images/blog/dt/blog2-dt-2x.webp 2x
-        "
-        src="./images/blog/dt/blog2-dt@1x.jpg"
-        alt=""
-      />
-      <img
-        class="blog-foto"
-        srcset="
-          ./images/blog/dt/blog1-dt@1x.jpg  1x,
-          ./images/blog/dt/blog1-dt@2x.jpg  2x,
-          ./images/blog/dt/blog1-dt-1x.webp 1x,
-          ./images/blog/dt/blog1-dt-2x.webp 2x
-        "
-        src="./images/blog/dt/blog1-dt@1x.jpg"
-        alt=""
-      />
-      <img
-        class="blog-foto"
-        srcset="
-          ./images/blog/dt/blog3-dt@1x.jpg  1x,
-          ./images/blog/dt/blog3-dt@2x.jpg  2x,
-          ./images/blog/dt/blog3-dt-1x.webp 1x,
-          ./images/blog/dt/blog3-dt-2x.webp 2x
-        "
-        src="./images/blog/dt/blog3-dt@1x.jpg"
-        alt=""
-      />
-    </div> -->
-    <p class="blog-text-follow">Follow to our newsletter</p>
-    <button class="btn blog-btn">Subscribe</button>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source media="(min-width:1280px)" srcset="
+                ./images/blog/dt/blog3-dt-1x.webp 1x,
+                ./images/blog/dt/blog3-dt-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(min-width:1280px)" srcset="
+                ./images/blog/dt/blog3-dt@1x.jpg 1x,
+                ./images/blog/dt/blog3-dt@2x.jpg 2x
+              "
+              type="image/jpeg"
+            />
+            <source media="(min-width:768px)" srcset="
+                ./images/blog/tb/blog3-tb-1x.webp 1x,
+                ./images/blog/tb/blog3-tb-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(min-width:768px)" srcset="
+                ./images/blog/tb/blog3-tb@1x.jpg 1x,
+                ./images/blog/tb/blog3-tb@2x.jpg 2x
+              "
+              type="image/jpeg"
+            />
+            <source media="(max-width:767px)" srcset="
+                ./images/blog/mb/blog3-mb-1x.webp 1x,
+                ./images/blog/mb/blog3-mb-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(max-width:767px)" srcset="
+                ./images/blog/mb/blog3-mb@1x.jpg 1x,
+                ./images/blog/mb/blog3-mb@2x.jpg 2x
+              "
+              type="image/jpeg"
+            />
+            <img
+              src="./images/blog/dt/blog3-dt@1x.jpg"
+              alt="blue iris flowers"
+              class="blog__foto"
+              loading="lazy"
+              width="315"
+              height="369"
+            />
+          </picture>
+        </div>
+
+        <div class="swiper-slide">
+          <picture class="swiper-slide">
+            <source media="(min-width:1280px)" srcset="
+                ./images/blog/dt/blog2-dt-1x.webp 1x,
+                ./images/blog/dt/blog2-dt-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(min-width:1280px)" srcset="
+                ./images/blog/dt/blog2-dt@1x.jpg 1x,
+                ./images/blog/dt/blog2-dt@2x.jpg 2x
+              "
+              type="image/jpeg"
+            />
+            <source media="(min-width:768px)" srcset="
+                ./images/blog/tb/blog2-tb-1x.webp 1x,
+                ./images/blog/tb/blog2-tb-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(min-width:768px)" srcset="
+                ./images/blog/tb/blog2-tb@1x.jpg 1x,
+                ./images/blog/tb/blog2-tb@2x.jpg 2x
+              "
+              type="image/jpeg"
+            />
+            <source media="(max-width:767px)" srcset="
+                ./images/blog/mb/blog2-mb-1x.webp 1x,
+                ./images/blog/mb/blog2-mb-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(max-width:767px)" srcset="
+                ./images/blog/mb/blog2-mb@1x.jpg 1x,
+                ./images/blog/mb/blog2-mb@2x.jpg 2x
+              "
+              type="image/jpeg"
+            />
+            <img
+              src="./images/blog/dt/blog2-dt@1x.jpg"
+              alt="leaves for a bouquet"
+              class="blog__foto"
+              loading="lazy"
+              width="315"
+              height="369"
+            />
+          </picture>
+        </div>
+
+        <div class="swiper-slide">
+          <picture class="swiper-slide">
+            <source media="(min-width:1280px)" srcset="
+                ./images/blog/dt/blog1-dt-1x.webp 1x,
+                ./images/blog/dt/blog1-dt-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(max-width:1280px)" srcset="
+                ./images/blog/dt/blog1-dt@1x.jpg 1x,
+                ./images/blog/dt/blog1-dt@2x.jpg 2x
+              "
+              type="image/jpeg"
+            />
+            <source media="(min-width:768px)" srcset="
+                ./images/blog/tb/blog1-tb-1x.webp 1x,
+                ./images/blog/tb/blog1-tb-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(min-width:768px)" srcset="
+                ./images/blog/tb/blog1-tb@1x.jpg 1x,
+                ./images/blog/tb/blog1-tb@2x.jpg 2x
+              "
+              type="image/jpeg"
+            />
+            <source media="(max-width:767px)" srcset="
+            ./images/blog/mb/blog1-mb-1x.webp 1x,
+            ./images/blog/mb/blog1-mb-2x.webp 2x
+          "
+          type="image/webp"
+            />
+            <source media="(max-width:767px)" srcset="
+            ./images/blog/mb/blog1-mb@1x.jpg 1x,
+            ./images/blog/mb/blog1-mb@2x.jpg 2x
+          "
+          type="image/jpeg"
+            />
+            <img
+              src="./images/blog/dt/blog1-dt@1x.jpg"
+              alt="orange calla flower"
+              class="blog__foto"
+              loading="lazy"
+              width="315"
+              height="369"
+            />
+          </picture>
+        </div>
+
+        <div class="swiper-slide">
+          <picture>
+            <source media="(min-width:1280px)" srcset="
+                ./images/blog/dt/flowers1-dt-1x.webp 1x,
+                ./images/blog/dt/flowers1-dt-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(min-width:1280px)" srcset="
+            ./images/blog/dt/flowers1-dt@1x.jpg  1x,
+            ./images/blog/dt/flowers1-dt@2x.jpg  2x
+          "
+          type="image/jpeg"
+            />
+            <source media="(min-width:768px)" srcset="
+                ./images/blog/tb/flowers1-tb-1x.webp 1x,
+                ./images/blog/tb/flowers1-tb-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(min-width:768px)" srcset="
+              ./images/blog/tb/flowers1-tb@1x.jpg  1x,
+              ./images/blog/tb/flowers1-tb@2x.jpg  2x
+            "
+            type="image/jpeg"
+
+            />
+            <source media="(max-width:767px)" srcset="
+                ./images/blog/mb/flowers1-mb-1x.webp 1x,
+                ./images/blog/mb/flowers1-mb-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(max-width:767px)" srcset="
+            ./images/blog/mb/flowers1-mb@1x.jpg  1x,
+            ./images/blog/mb/flowers1-mb@2x.jpg  2x
+          "
+          type="image/jpeg"
+            />
+            <img
+              src="./images/blog/dt/flowers1-dt@1x.jpg"
+              alt="delicate white anemones"
+              class="blog__foto"
+              loading="lazy"
+              width="315"
+              height="369"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source media="(min-width:1280px)" srcset="
+                ./images/blog/dt/flowers2-dt-1x.webp 1x,
+                ./images/blog/dt/flowers2-dt-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(min-width:1280px)" srcset="
+                ./images/blog/dt/flowers2-dt@1x.jpg  1x,
+                ./images/blog/dt/flowers2-dt@2x.jpg  2x
+              "
+              type="image/jpeg"
+
+            />
+            <source media="(min-width:768px)" srcset="
+                ./images/blog/tb/flowers2-tb-1x.webp 1x,
+                ./images/blog/tb/flowers2-tb-2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source media="(min-width:768px)" srcset="
+            ./images/blog/tb/flowers2-tb@1x.jpg  1x,
+            ./images/blog/tb/flowers2-tb@2x.jpg  2x
+            "
+              type="image/jpeg"
+            />
+            <source media="(max-width:767px)" srcset="
+                ./images/blog/mb/flowers2-mb-1x.webp 1x,
+                ./images/blog/mb/flowers2-mb-2x.webp 2x
+              "
+              type="image/webp"
+
+            />
+            <source media="(max-width:767px)" srcset="
+                ./images/blog/mb/flowers2-mb@1x.jpg  1x,
+                ./images/blog/mb/flowers2-mb@2x.jpg  2x
+              "
+              type="image/jpeg"
+
+            />
+            <img
+              src="./images/blog/dt/flowers2-dt@1x.jpg"
+              alt="delicate bouquet of flowers"
+              class="blog__foto"
+              loading="lazy"
+              width="315"
+              height="369"
+            />
+          </picture>
+        </div>
+
+        <div class="swiper-slide">
+          <picture>
+            <source media="(min-width:1280px)" srcset="
+                ./images/blog/dt/flowers3-dt-1x.webp 1x,
+                ./images/blog/dt/flowers3-dt-2x.webp 2x
+              "
+              type="image/webp"
+
+            />
+            <source media="(min-width:1280px)" srcset="
+                ./images/blog/dt/flowers3-dt-1x.webp 1x,
+                ./images/blog/dt/flowers3-dt-2x.webp 2x
+              "
+              type="image/jpeg"
+              media="(min-width:1280px)"
+            />
+            <source  media="(min-width:768px)" srcset="
+                ./images/blog/tb/flowers3-tb-1x.webp 1x,
+                ./images/blog/tb/flowers3-tb-2x.webp 2x
+              "
+              type="image/webp"
+
+            />
+            <source media="(min-width:768px)" srcset="
+              ./images/blog/tb/flowers3-tb@1x.jpg  1x,
+              ./images/blog/tb/flowers3-tb@2x.jpg  2x
+            "
+            type="image/jpeg"
+
+          />
+            <source media="(max-width:767px)"
+              srcset="
+                ./images/blog/mb/flowers3-mb-1x.webp 1x,
+                ./images/blog/mb/flowers3-mb-2x.webp 2x
+              "
+              type="image/webp"
+
+            />
+            <source media="(max-width:767px)"
+            srcset="
+              ./images/blog/mb/flowers3-mb@1x.jpg  1x,
+              ./images/blog/mb/flowers3-mb@2x.jpg  2x
+            "
+            type="image/jpeg"
+
+          />
+            <img
+              src="./images/blog/dt/flowers3-dt@1x.jpg"
+              alt="orange roses"
+              class="blog__foto"
+              loading="lazy"
+              width="315"
+              height="369"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <div class="swiper-button-prev">
+        <svg class="blog__arrow">
+          <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next">
+        <svg class="blog__arrow">
+          <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+
+    <p class="blog__text-follow">Follow to our newsletter</p>
+    <button data-modal-open1 class="btn blog-btn">Subscribe</button>
   </div>
 </section>
+
