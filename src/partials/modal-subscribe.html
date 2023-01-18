@@ -2,36 +2,10 @@
   <div class="subscribe__wrapper">
     <picture>
       <source
-        media="(max-width:768px)"
+        media="(min-width:1280px)"
         srcset="
-          ./images/modal(subscribe)/sub-mb@1x.jpg  1x,
-          ./images/modal(subscribe)/sub-mb@2x.jpg  2x,
-          ./images/modal(subscribe)/sub-mb@1x.webp 1x,
-          ./images/modal(subscribe)/sub-mb@2x.webp
-        "
-        type="image/jpeg"
-      />
-      <source
-        media="(max-width:768px)"
-        srcset="
-          ./images/modal(subscribe)/sub-mb@1x.webp 1x,
-          ./images/modal(subscribe)/sub-mb@2x.webp
-        "
-        type="image/webp"
-      />
-      <source
-        media="(min-width:768px)"
-        srcset="
-          ./images/modal(subscribe)/sub-tb@1x.jpg 1x,
-          ./images/modal(subscribe)/sub-tb@2x.jpg 2x
-        "
-        type="image/jpeg"
-      />
-      <source
-        media="(min-width:768px)"
-        srcset="
-          ./images/modal(subscribe)/sub-tb@1x.webp 1x,
-          ./images/modal(subscribe)/sub-tb@2x.webp 2x
+          ./images/modal(subscribe)/sub-dt@1x.webp 1x,
+          ./images/modal(subscribe)/sub-dt@2x.webp 2x
         "
         type="image/webp"
       />
@@ -44,19 +18,43 @@
         type="image/jpeg"
       />
       <source
-        media="(min-width:1280px)"
+        media="(min-width:768px)"
         srcset="
-          ./images/modal(subscribe)/sub-dt@1x.webp 1x,
-          ./images/modal(subscribe)/sub-dt@2x.webp 2x
+          ./images/modal(subscribe)/sub-tb@1x.webp 1x,
+          ./images/modal(subscribe)/sub-tb@2x.webp 2x
         "
         type="image/webp"
       />
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./images/modal(subscribe)/sub-tb@1x.jpg 1x,
+          ./images/modal(subscribe)/sub-tb@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <source
+        media="(max-width:767px)"
+        srcset="
+          ./images/modal(subscribe)/sub-mb@1x.webp 1x,
+          ./images/modal(subscribe)/sub-mb@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(max-width:767px)"
+        srcset="
+          ./images/modal(subscribe)/sub-mb@1x.jpg 1x,
+          ./images/modal(subscribe)/sub-mb@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
       <img
         src="./images/modal(subscribe)/sub-tb@1x.jpg"
-        alt="dark bouquet of flovers"
-        width="428"
-        height="528"
+        alt="stylish bouquet of flowers"
         loading="lazy"
+        width="588"
+        height="271"
       />
     </picture>
 
@@ -74,6 +72,7 @@
       <form class="form-blog">
         <label for="email" class="form-blog-label">Email</label>
         <input
+          id="email"
           type="email"
           name="mail"
           placeholder="Your email"
