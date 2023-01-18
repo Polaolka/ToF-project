@@ -22,7 +22,10 @@
 .swiper-button-next {
   right: calc(50% - 380px);
   left: auto;
-
+  fill: var(--white-cl);
+  @include mq(desktop) {
+    fill: var(--main-text-cl);
+  }
   &::before,
   &::after {
     display: none;
@@ -52,6 +55,7 @@
 .swiper-button-prev {
   left: calc(50% - 160px) !important;
   right: auto;
+  color: var(--whit-cl);
 
   @include mq(phone) {
     left: calc(50% - 200px) !important;
