@@ -2,36 +2,62 @@
   <div class="subscribe__wrapper">
     <picture>
       <source
+        media="(max-width:768px)"
         srcset="
           ./images/modal(subscribe)/sub-mb@1x.jpg  1x,
           ./images/modal(subscribe)/sub-mb@2x.jpg  2x,
           ./images/modal(subscribe)/sub-mb@1x.webp 1x,
           ./images/modal(subscribe)/sub-mb@2x.webp
         "
-        media="(max-width:767.98px)"
+        type="image/jpeg"
+      />
+      <source
+        media="(max-width:768px)"
+        srcset="
+          ./images/modal(subscribe)/sub-mb@1x.webp 1x,
+          ./images/modal(subscribe)/sub-mb@2x.webp
+        "
         type="image/webp"
       />
       <source
+        media="(min-width:768px)"
         srcset="
-          ./images/modal(subscribe)/sub-tb@1x.jpg  1x,
-          ./images/modal(subscribe)/sub-tb@2x.jpg  2x,
+          ./images/modal(subscribe)/sub-tb@1x.jpg 1x,
+          ./images/modal(subscribe)/sub-tb@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="
           ./images/modal(subscribe)/sub-tb@1x.webp 1x,
           ./images/modal(subscribe)/sub-tb@2x.webp 2x
         "
-        media="(max-width:1279.98px)"
         type="image/webp"
       />
       <source
+        media="(min-width:1280px)"
         srcset="
-          ./images/modal(subscribe)/sub-dt@1x.jpg  1x,
-          ./images/modal(subscribe)/sub-dt@2x.jpg  2x,
+          ./images/modal(subscribe)/sub-dt@1x.jpg 1x,
+          ./images/modal(subscribe)/sub-dt@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <source
+        media="(min-width:1280px)"
+        srcset="
           ./images/modal(subscribe)/sub-dt@1x.webp 1x,
           ./images/modal(subscribe)/sub-dt@2x.webp 2x
         "
-        media="(min-width:1280px)"
         type="image/webp"
       />
-      <img src="./images/modal(subscribe)/sub-tb@1x.jpg" alt="" />
+      <img
+        src="./images/modal(subscribe)/sub-tb@1x.jpg"
+        alt="dark bouquet of flovers"
+        width="428"
+        height="528"
+        loading="lazy"
+      />
     </picture>
 
     <div class="subscribe__information-wrapper">
