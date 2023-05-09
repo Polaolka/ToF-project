@@ -70,6 +70,14 @@
   .mobile-menu__btn.is-active ~ & {
     opacity: 0;
   }
+  // transition: animation, fill $animation-duration $transition-timing-function;
+  animation: phone-infinite 10s infinite ease-in-out;
+  transition: animation, fill 1500ms ease-in-out;
+  &:hover,
+  &:focus {
+      animation: phone-hover 10s ease-in-out;
+      fill: var(--default-btn-cl);
+  }
 }
 
 .header__icon {
@@ -113,6 +121,60 @@
   @include mq(tablet) {
     padding-top: 12px;
     padding-bottom: 21px;
+  }
+  transition: color 300ms ease-in-out;
+  &:hover, 
+  &:focus {
+    color: var(--default-btn-cl);
+  }
+}
+
+
+@keyframes phone-infinite {
+  0% {
+      transform: rotate(0) scale(1) skew(1deg)
+  }
+  3% {
+      transform: rotate(-30deg) scale(1.05) skew(1deg)
+  }
+  6% {
+      transform: rotate(30deg) scale(1.05) skew(1deg)
+  }
+  9% {
+      transform: rotate(-30deg) scale(1.1) skew(1deg)
+  }
+  12% {
+      transform: rotate(30deg) scale(1.05) skew(1deg)
+  }
+  15% {
+      transform: rotate(0) scale(1) skew(1deg)
+  }
+  100% {
+      transform: rotate(0) scale(1) skew(1deg)
+  }
+}
+
+@keyframes phone-hover {
+  0% {
+      transform: rotate(0) scale(1) skew(1deg)
+  }
+  2% {
+      transform: rotate(-30deg) scale(1.03) skew(1deg)
+  }
+  4% {
+      transform: rotate(30deg) scale(1.05) skew(1deg)
+  }
+  6% {
+      transform: rotate(-30deg) scale(1.1) skew(1deg)
+  }
+  8% {
+      transform: rotate(30deg) scale(1.1) skew(1deg)
+  }
+  10% {
+      transform: rotate(0) scale(1) skew(1deg)
+  }
+  100% {
+      transform: rotate(0) scale(1) skew(1deg)
   }
 }
 
