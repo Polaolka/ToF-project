@@ -24,12 +24,12 @@ function toggleModal(event) {
     setTimeout(() => {
       refs.gratitudePopup.classList.remove('visually-hidden');
       refs.spinnerEl.classList.add('visually-hidden');
-    }, 500); //time to toggle windows
+    }, 300); //time to toggle windows
   } else {
     refs.modal.classList.toggle('is-hidden');
     setTimeout(() => {
       refs.modalForm.classList.remove('visually-hidden');
       refs.gratitudePopup.classList.add('visually-hidden');
-    }, 500);
+    }, 300);
   }
 }
